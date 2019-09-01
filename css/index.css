@@ -130,7 +130,7 @@ html {
   font-size: 62.5%;
 }
 .container {
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -145,11 +145,13 @@ html {
 .small-main-title {
   font-size: 2em;
   text-align: center;
+  text-decoration: underline;
   padding: 1em;
 }
 nav {
+  padding: 0.5em;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   flex-direction: row;
   border-bottom: 0.2em solid black;
@@ -165,17 +167,28 @@ nav .nav-items {
 }
 nav .nav-items .nav-item {
   padding: 1em;
-  font-size: 1.7em;
+  font-size: 1.5em;
+}
+footer {
+  width: 100%;
+  background-color: black;
+  color: white;
 }
 .home-find {
-  width: 90%;
-  margin: 0 auto;
+  width: 100vw;
+  height: 100vh;
+  background: url('/img/find-bg.jpg') no-repeat center;
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 .home-find .find-food {
+  background-color: white;
+  border: 1px solid black;
+  margin-top: 10%;
+  padding: 0.5em 1em;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -202,9 +215,11 @@ nav .nav-items .nav-item {
   align-items: center;
   flex-direction: row;
 }
+.home-find .display-food {
+  padding: 2em;
+  font-size: 1.3em;
+}
 .home-dash {
-  width: 90%;
-  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -212,22 +227,34 @@ nav .nav-items .nav-item {
 }
 .home-dash .dashboard-header {
   margin-top: 1em;
-  height: 25vh;
-  width: 90vw;
+  height: 35vh;
+  width: 95vw;
   background: url('/img/graph.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
-.home-dash .dashboard .progress {
+.home-dash .dashboard {
+  width: 100%;
+  background: url('/img/dash-bg.jpg') center no-repeat;
+  background-size: cover;
+}
+.home-dash .dashboard .dash-item {
+  border: 0.17em solid black;
+  border-radius: 1%;
+  margin: 1em 0em;
+  background-color: white;
+}
+.home-dash .dashboard .dash-item .progress {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-direction: row;
+  flex-wrap: wrap;
 }
-.home-dash .dashboard .nutrient {
+.home-dash .dashboard .dash-item .nutrient {
   padding: 1em;
-  font-size: 1.3em;
+  font-size: 2em;
 }
 .home {
   display: flex;

@@ -1,12 +1,10 @@
 .home-dash {
-    width: 90%;
-    margin: 0 auto;
+   
     .display-flex(center, center, column);
-
     .dashboard-header {
         margin-top: 1em;
-        height: 25vh;
-        width: 90vw;
+        height: 35vh;
+        width: 95vw;
         background: url('/img/graph.png');
         background-position: center;
         background-size: cover;
@@ -14,15 +12,29 @@
     }
 
     .dashboard {
+        width: 100%;
+        background: url('/img/dash-bg.jpg')center no-repeat;
+        background-size: cover;
+        
 
-        .progress {
-            .display-flex(space-evenly, center, row);
+        .dash-item {
+            border: .17em solid black;
+            border-radius: 1%;
+            margin: 1em 0em;
+            background-color: white;
+
+            .progress {
+                .display-flex(space-evenly, center, row);
+                flex-wrap: wrap;
+            }
+    
+            .nutrient {
+                padding: 1em;
+                font-size: 2em;
+            }
         }
 
-        .nutrient {
-            padding: 1em;
-            font-size: 1.3em;
-        }
+        
        
     }
 }
