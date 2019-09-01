@@ -129,6 +129,14 @@ table {
 html {
   font-size: 62.5%;
 }
+.main-title {
+  font-size: 4em;
+  text-align: center;
+  padding: 1em;
+}
+.small-main-title {
+  font-size: 2em;
+}
 nav {
   display: flex;
   justify-content: space-evenly;
@@ -149,7 +157,7 @@ nav .nav-items .nav-item {
   padding: 1em;
   font-size: 1.7em;
 }
-.home {
+.home-find {
   width: 90%;
   margin: 0 auto;
   display: flex;
@@ -157,30 +165,67 @@ nav .nav-items .nav-item {
   align-items: center;
   flex-direction: column;
 }
-.home .find-food {
+.home-find .find-food {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-.home .find-food .small-title {
+.home-find .find-food .small-title {
   font-size: 3em;
   padding: 1em;
 }
-.home .find-food .searchbox {
+.home-find .find-food .searchbox {
   border: 1px solid black;
   padding: 1em;
 }
-.home .find-food .checkboxes {
+.home-find .find-food .checkboxes {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
 }
-.home .find-food .checkboxes .checkbox {
+.home-find .find-food .checkboxes .checkbox {
   padding: 0.5em;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
+}
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: url('/img/foods-bg.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+}
+.home .landing-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  padding: 4em;
+  margin: 30% 0%;
+  border: 1px solid black;
+}
+.home .landing-header .get-started {
+  margin-top: 1em;
+  padding: 1em;
+  background: none;
+  border-radius: 10%;
+  transition: all 0.2s ease;
+}
+.home .landing-header .get-started:active {
+  background-color: #B93705;
+  color: #C9C3B3;
+}
+.home .landing-header .get-started a {
+  text-decoration: none;
+  color: black;
 }

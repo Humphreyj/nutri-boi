@@ -1,25 +1,34 @@
 .home {
-    width: 90%;
-    margin: 0 auto;
     .display-flex(center,center,column);
-    .find-food {
-        .display-flex(center,center,column);
-        .small-title {
-            font-size: 3em;
+    background: url('/img/foods-bg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+
+    .landing-header {
+        .display-flex(center,center, column);
+        background-color: white;
+        padding: 4em;
+        margin: 30% 0%;
+        border: 1px solid black;
+
+        .get-started {
+            margin-top: 1em;
             padding: 1em;
-        }
-        .searchbox {
-            border: 1px solid black;
-            padding: 1em;
-        }
-        .checkboxes {
-            .display-flex(space-between, center, row);
-            .checkbox {
-                padding: .5em;
-                .display-flex(center, center, row);
+            background: none;
+            border-radius: 10%;
+            transition: all .2s ease;
+            &:active {
+                background-color: #B93705; 
+                color: #C9C3B3;
+            }
+
+            a {
+                text-decoration: none;
+                color: black;
             }
         }
     }
-    //find-food
 }
-//home
