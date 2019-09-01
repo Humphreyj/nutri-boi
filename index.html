@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Nutrition Guide - Dashboard</title>
+    
+</head>
+<body>
+    <nav>
+        <h1 class="title">Nutri-Guide</h1>
+
+        <div class="nav-items">
+            <a href="#" class="nav-item">Dashboard</a>
+            <a href="#" class="nav-item">My plan</a>
+            <a href="#" class="nav-item">Settings</a>
+        </div>
+
+    </nav>
+    <div class="container home">
+        <section class="find-food">
+            <h3 class="small-title">Find a Food</h3>
+            <div class="searchbox">
+                <input type="text" class='food-input' placeholder="Enter Food here!">
+                <button class="search-btn">Find Food</button>
+            </div>
+            <div class="checkboxes">
+                <div class="checkbox">
+                    <label for="branded">Branded Products</label>
+                    <input type="checkbox" class="search-type" id='branded'>
+                    
+                </div>
+                <div class="checkbox">
+                    <label for="standard">Standard Definition</label>
+                    <input type="checkbox" class="search-type"id='standard'>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script> 
+    <script type="text/javascript" src='index.js'></script>
+</body>
+</html>
